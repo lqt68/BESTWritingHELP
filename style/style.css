@@ -1,0 +1,176 @@
+@import url(./settings.css);
+@import url(./components/header.css);
+@import url(./components/nav.css);
+
+.intro {
+    background-image: url(../assets/img/main_bg_img_heder.png);
+}
+
+.intro__desc {
+    padding: 40px;
+}
+
+.intro__content {
+    text-align: center;
+    background-color: #caddea;
+    margin-top: 20px;
+    /* margin-bottom: 14px; */
+    padding: 10px 24px;
+}
+
+.intro__content-text {
+    margin-top: 20px;
+    padding-left: 36px;
+    padding-right: 220px;
+}
+
+.intro__content-text h3 {
+    padding-left: 40px;
+}
+
+.intro__content-text li {
+    font-family: Arial-Narrow;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.intro__content-btn {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+    /* padding: 0px; */
+    padding-left: 76px;
+    cursor: pointer;
+    padding-top: 0;
+}
+
+.intro__content-btn button {
+    font-family: Roboto-Bold;
+    border: 2px solid #1b7fd0;
+    background-color: transparent;
+    color: #1b7fd0;
+    width: 230px;
+    height: 30px;
+
+    &:hover {
+        background-color: #1b7fd0;
+        color: #ffffff;
+        transition: 0.3s;
+    }
+}
+
+.contact {
+    background-image: url(../assets/img/main_bg_prise.png);
+}
+
+.contact__price {
+    padding: 14px 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: Roboto-Regular;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #caddea;
+}
+
+.off {
+    font-size: 32px;
+    color: #dd0000;
+    padding-right: 6px;
+}
+
+.contact__price h2 {
+    margin: 0;
+}
+
+.contact__price h4 {
+    margin: 0;
+}
+
+.form-select {
+    width: 330px;
+    color: #212529;
+    background-color: #caddea;
+
+}
+
+.select__menu {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+
+.select__menu-start,
+.select__menu-medium,
+.select__menu-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.start_up {
+    margin-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.start_down-text {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    text-transform: uppercase;
+}
+
+.select__menu-price {
+    margin: 0;
+    color: #caddea;
+}
+
+.price-span {
+    color: #caddea;
+    font-size: 48px;
+}
+
+.usd {
+    color: #caddea;
+    font-size: 20px;
+}
+
+.start_up p {
+    margin-bottom: 6px;
+    color: #caddea;
+    text-transform: uppercase;
+}
+
+.start_down p {
+    margin-bottom: 6px;
+    color: #caddea;
+    text-transform: uppercase;
+}
+
+.start_down-text p {
+    color: #caddea;
+    text-transform: uppercase;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.start_down button {
+    width: 310px;
+    height: 40px;
+    color: #caddea;
+    background-color: #dd0000;
+
+    &:hover {
+        background-color: #a40000;
+    }
+}

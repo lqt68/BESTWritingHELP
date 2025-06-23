@@ -1,0 +1,30 @@
+header {
+    background-color: var(--color_main_2);
+    background-image: url(../../assets/img/heder_bg_top.png);
+    height: 56px;
+}
+
+header span, header a {
+    font-size: 20px;
+    color: #85a1b7;
+    font-weight: 250;
+    font-family: Roboto-Regular;
+}
+
+header a {
+    color: #caddea;
+    text-decoration: none;
+}
+
+header .login, header .live-chat {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: var(--color_btn_text);
+    font-weight: 400;
+    font-family: Roboto-Regular;
+
+    &:hover{
+        color: var(--color_btn_text_hover);
+    }
+}
+
