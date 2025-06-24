@@ -28,3 +28,30 @@ header .login, header .live-chat {
     }
 }
 
+header .login::after {
+    content: '';
+    display: inline-block;
+    background-image: url(../../assets/img/Login.svg);
+    width: 50px;
+    height: 28px;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
+header .live-chat::after {
+    content: '';
+    display: inline-block;
+    background-image: url(../../assets/img/Chat.svg);
+    width: 50px;
+    height: 28px;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
+header .login:hover::after {
+    background-image: url(../../assets/img/Login2.svg);
+}
+
+header .live-chat:hover::after {
+    background-image: url(../../assets/img/Chat2.svg);
+}
