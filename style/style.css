@@ -206,24 +206,169 @@
     background-color: #dd0000;
     position: relative;
     z-index: 2;
+    border: none;
 
     &:hover {
         background-color: #a40000;
     }
+
+    &::before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 30px solid #dd0000;
+        border-right: 30px solid transparent;
+        position: absolute;
+        top: 80%;
+        left: 0;
+        z-index: 1;
+    }
+
+    &:hover::before {
+        border-top-color: #a40000;
+    }
 }
 
-.start_down button::before {
+.descripsion {
+    background-image: url(../assets/img/how_it_works_bg.png);
+}
+
+.descripsion__main {
+    margin-bottom: 40px;
+}
+
+.descripsion__main h2 {
+    background-color: #caddea;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+
+.descripsion__main h2::before {
     content: '';
     width: 0;
     height: 0;
-    border-top: 30px solid #dd0000;
+    border-top: 30px solid #caddea;
     border-right: 30px solid transparent;
     position: relative;
-    top: 48px;
-    right: 92px;
-    z-index: 1;
+    top: 74px;
+    right: 188px
+}
+
+.description__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+.card-title {
+    color: #1b7fd0;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.card-text,
+.card-body ul li {
+    font-family: Arial-Narrow;
+}
+
+.card-body .btn {
+    background-color: #1b7fd0;
+    color: #ffffff;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 0;
+    font-size: 0.85rem;
+    transition: 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
     &:hover {
-        color: #a40000;
+        background-color: #ffffff;
+        color: #1b7fd0;
+        border: 2px solid #1b7fd0;
     }
+}
+
+p,
+.card-body ul li {
+    font-family: Arial-Narrow;
+    font-size: 18px;
+}
+
+.card-title {
+    text-transform: uppercase;
+}
+
+.hover__card:hover {
+    background-color: #ffffff;
+    transform: scale(1.1);
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 34px 20px rgba(0, 0, 0, 0.3);
+
+    &::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 30px solid #ffffff;
+        border-right: 30px solid transparent;
+        position: relative;
+        top: 28px;
+        right: 12px;
+        transition: box-shadow 0.3s ease;
+    }
+}
+
+.img__wrap {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.img__wrap img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+    width: 150px;
+    height: 150px;
+}
+
+.default__img {
+    opacity: 1;
+    z-index: 1;
+}
+
+.hover__img {
+    opacity: 0;
+    z-index: 2;
+}
+
+.hover__card:hover .default__img {
+    opacity: 0;
+}
+
+.hover__card:hover .hover__img {
+    opacity: 1;
+}
+
+.features {
+    margin-top: 44px;
+    background-image: url(../assets/img/main_bg_prise.png);
 }
