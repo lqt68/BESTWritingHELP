@@ -379,3 +379,48 @@ p,
 .features {
     background-image: url(../assets/img/main_bg_prise.png);
 }
+
+.descripsion__text {
+    position: relative;
+    top: -20px;
+}
+
+.descripsion__text p {
+    color: #caddea;
+    font-family: Arial-Narrow;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.features__box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.feature__desc h5 {
+    background-color: #ffffff;
+    color: #1b7fd0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: Roboto-Bold;
+    font-weight: bold;
+}
+
+.feature__desc p {
+    color: #ffffff;
+    font-family: Arial-Narrow;
+    font-size: 22px;
+    padding: 4px 0;
+}
+
+.line {
+    border: 2px solid #ffffff;
+}
