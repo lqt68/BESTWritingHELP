@@ -424,3 +424,79 @@ p,
 .line {
     border: 2px solid #ffffff;
 }
+
+.works {
+    margin-top: 20px;
+    background-image: url(../assets/img/how_it_works_bg.png);
+}
+
+.works__desc-text {
+    width: 75%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-left: 30px;
+    border-bottom: 2px solid #caddea;
+}
+
+.works__desc-text p {
+    font-size: 60px;
+    font-family: Roboto-Bold;
+    font-weight: bold;
+    margin: 0;
+    color: #caddea;
+    flex-shrink: 0;
+    width: 30px;
+    text-align: center;
+}
+
+.works__desc-text h4 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+    flex: 1;
+}
+
+.gray__line {
+    height: 2px;
+    background-color: #ccc;
+    margin-top: 8px;
+}
+
+.works__desc-text:hover {
+    background-color: #075da2;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        border-top: 41px solid transparent;
+        border-left: 60px solid #075da2;
+        border-bottom: 50px solid transparent;
+        left: 100%;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+}
+
+.works__desc-text:hover p,
+.works__desc-text:hover h4 {
+    color: #ffffff;
+}
+
+/* Тимчасово */
+.test {
+    width: 300px;
+    height: 400px;
+    /* background-color: #ffffff; */
+    background-color: red;
+}
+
+.works__content {
+    display: flex;
+    flex-direction: row;
+}
