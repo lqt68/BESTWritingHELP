@@ -1,0 +1,116 @@
+footer {
+    background-image: url(../../assets/img/main_bg_prise.png);
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.links__box {
+    display: flex;
+    flex-direction: column;
+}
+
+.links__box a {
+    text-decoration: none;
+    color: var(--color_btn_send_message_hover);
+
+    &:hover {
+        color: var(--color_main_2);
+    }
+}
+
+/* .plus {
+    border: 2px solid #caddea;
+}
+
+.plus h6 {
+    background-color: #caddea;
+    color: #1b7fd0;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 36px;
+} */
+
+.line__plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.line__footer {
+    flex: 1;
+    height: 4px;
+    background-color: #caddea;
+}
+
+.plus {
+    width: 32px;
+    height: 32px;
+    background-color: #caddea;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plus h6 {
+    margin: 0;
+    font-size: 20px;
+    color: #013056;
+    font-weight: bold;
+}
+
+.footer__nav {
+    height: 40px;
+    /* filter: drop-shadow(2px 3.464px 3.5px #95aeb6); */
+}
+
+.footer__nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__nav ul li a {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--color_btn_text);
+    font-weight: 400;
+    text-decoration: none;
+    padding: 8px 30px;
+    position: relative;
+    z-index: 1;
+
+    &:hover {
+        background-color: var(--color_btn_send_message_hover);
+        color: var(--color_btn_text_hover);
+        box-shadow: -6px 0px 0px var(--color_btn_send_message_hover),
+                    6px 0px 0px var(--color_btn_send_message_hover);
+    }
+}
+
+.footer__nav ul .border-li::after {
+    content: '';
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+}
+
+.copyright {
+    font-family: Arial-Narrow;
+    font-size: 16px;
+    color: #caddea;
+    margin-top: 16px;
+    text-align: center;
+}
