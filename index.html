@@ -11,12 +11,16 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="./style/style.css" />
+        <link rel="stylesheet" href="./style/media.css" />
+        
     </head>
     <body>
         <header class="container-fluid d-flex align-items-center">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 d-none d-sm-flex justify-content-evenly col-md-8 tele__tab">
+                    <div
+                        class="col-12 d-none d-sm-flex justify-content-evenly col-md-8 tele__tab"
+                    >
                         <span class="d-flex align-items-center"
                             >Sales toll free:
                             <a href="#">1 (044) 121-0506</a></span
@@ -27,8 +31,14 @@
                         >
                     </div>
 
-                    <div class="d-flex align-items-center justify-content-between d-sm-none ">
-                        <img class="d-block mobile__logo" src="./assets/img/Logo_mobile_2.svg" alt="Logo_mobile_2.svg">
+                    <div
+                        class="d-flex align-items-center justify-content-between d-sm-none"
+                    >
+                        <img
+                            class="d-block mobile__logo"
+                            src="./assets/img/Logo_mobile_2.svg"
+                            alt="Logo_mobile_2.svg"
+                        />
                         <div class="burger__menu">
                             <span></span>
                             <span></span>
@@ -51,10 +61,36 @@
         <nav class="container-fluid d-flex align-items-center">
             <div class="container">
                 <div class="row">
-                    <div class="burger__menu">
+                    <div
+                        class="d-none d-sm-flex align-items-center justify-content-between"
+                    >
+                    <div class="burger__menu-2">
                         <span></span>
                         <span></span>
                         <span></span>
+                    </div>
+                    <div class="d-flex d-md-none">
+                            <a class="login d-flex align-items-center text-white" href="#"
+                                >Login</a
+                            >
+                            <a
+                                class="live-chat d-flex align-items-center text-white"
+                                href="#"
+                                >Live Chat</a
+                            >
+                        </div>
+                    </div>
+                    <div
+                        class="col-12 d-flex flex-column d-sm-none justify-content-evenly col-md-8 tele__tab"
+                    >
+                        <span class="d-flex align-items-center text-white"
+                            >Sales toll free:
+                            <a href="#" class="text-white">1 (044) 121-0506</a></span
+                        >
+                        <span class="d-flex align-items-center text-white"
+                            >Support toll free:
+                            <a href="#" class="text-white">1 (044) 121-0507</a></span
+                        >
                     </div>
                     <div class="col-12 nav__tab">
                         <ul class="d-flex justify-content-around">
@@ -77,9 +113,9 @@
             </div>
         </nav>
 
-        <section class="intro">
+         <section class="intro">
             <div class="container">
-                <div class="intro__desc col-6">
+                <div class="intro__desc">
                     <img src="./assets/img/Logo.svg" alt="Logo.svg" />
                     <div class="intro__content">
                         <h1>Things go better with us!</h1>
@@ -113,7 +149,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
 
         <section class="container-fluid d-flex align-items-center contact">
             <div class="container">
@@ -192,7 +228,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
 
         <section class="container-fluid d-flex align-items-center descripsion">
             <div class="container">
@@ -402,7 +438,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
 
         <section class="container-fluid d-flex align-items-center features">
             <div class="container">
@@ -481,7 +517,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
 
         <section class="container-fluid d-flex align-items-center works">
             <div class="container">
@@ -603,9 +639,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
 
-        <section class="container-fluid d-flex align-items-center cards">
+         <section class="container-fluid d-flex align-items-center cards-2">
             <div class="container">
                 <div class="row">
                     <div class="images">
@@ -638,9 +674,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
 
-        <footer class="container-fluid d-flex align-items-center">
+       <footer class="container-fluid d-flex align-items-center">
             <div class="container">
                 <div class="links">
                     <div class="links__box">
@@ -724,7 +760,7 @@
 
                 <div class="footer__nav">
                     <div class="col-12">
-                        <ul class="d-flex justify-content-around">
+                        <ul class="d-flex justify-content-around footer__nav-cont">
                             <li class="border-li"><a href="#">home</a></li>
                             <li class="border-li"><a href="#">about us</a></li>
                             <li class="border-li"><a href="#">prices</a></li>
@@ -746,6 +782,6 @@
                     <p>Terms and Conditions Privacy Policy</p>
                 </div>
             </div>
-        </footer>
+        </footer> 
     </body>
 </html>

@@ -37,10 +37,6 @@
         margin-bottom: 30px;
     }
 
-    .images {
-        height: 30px;
-    }
-
     .socials__ico img {
         width: 90%;
     }
@@ -54,14 +50,31 @@
         font-weight: 600;
         padding: 9px 16px;
     }
+
+    .intro__desc {
+        width: 70%;
+    }
+
+    .intro__content h1::before {
+        right: 54px;
+    }
+    .intro__content-text {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .links {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media (max-width: 992px) {
-    header span, header a {
+    header span,
+    header a {
         font-size: 14px;
     }
 
-    header .login, header .live-chat {
+    header .login,
+    header .live-chat {
         font-size: 12px;
     }
 
@@ -76,6 +89,12 @@
         height: 18px;
         margin-left: 4px;
     }
+    .select__menu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .features__box {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -83,11 +102,13 @@
         height: 44px;
     }
 
-    header span, header a {
+    header span,
+    header a {
         font-size: 14px;
     }
 
-    header .login, header .live-chat {
+    header .login,
+    header .live-chat {
         font-size: 12px;
     }
 
@@ -103,10 +124,47 @@
         display: none;
     }
 
-    .burger__menu {
-        position: absolute;
+    .burger__menu-2 {
+        display: flex;
     }
 
-    
+    .intro {
+        background-position: 70% center;
+    }
+    .links {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .footer__nav-cont{
+
+        display: none !important;
+
+    }
 }
 
+@media (max-width: 650px) {
+    .intro {
+        background-image: none;
+    }
+    .intro__desc {
+        width: 100%;
+    }
+    .select__menu {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    .title__price {
+        display: none;
+    }
+    .intro__content-btn {
+        padding-left: 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .features__box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .links {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+}
