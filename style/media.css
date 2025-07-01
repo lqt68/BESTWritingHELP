@@ -3,6 +3,11 @@
         font-size: 15px;
     }
 
+    
+    .intro__content h1::before {
+        right: 76px;
+    }
+
     .footer__nav ul li a {
         font-size: 15px;
         text-align: center;
@@ -95,6 +100,10 @@
     .features__box {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .intro__content h1::before {
+        right: 60px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -166,5 +175,34 @@
     .links {
         grid-template-columns: repeat(1, 1fr);
         gap: 16px;
+    }
+
+    .contact__price h2::before {
+        top: 63px;
+    }
+
+    .icon img {
+        width: 100px;
+        height: 100%;
+    }
+
+    .descripsion__text p {
+        margin-top: 50px;
+    }
+
+    .works__desc-text p {
+        font-size: 40px;
+    }
+
+    .works__desc-text h4 {
+        font-size: 12px;
+    }
+
+    .tab-text {
+        width: 158%;
+    }
+
+    .images {
+        height: 250px;
     }
 }
