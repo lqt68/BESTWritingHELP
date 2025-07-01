@@ -1,0 +1,112 @@
+@media (max-width: 1400px) {
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    .footer__nav ul li a {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    nav ul li a {
+        font-size: 10px;
+        font-weight: 600;
+        padding: 9px 16px;
+    }
+
+    .form-select {
+        width: 286px;
+    }
+
+    .start_down button {
+        width: 208px;
+    }
+
+    p.text {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .descripsion__main h2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .images {
+        height: 30px;
+    }
+
+    .socials__ico img {
+        width: 90%;
+    }
+
+    .cards {
+        height: 50px;
+    }
+
+    .footer__nav ul li a {
+        font-size: 10px;
+        font-weight: 600;
+        padding: 9px 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    header span, header a {
+        font-size: 14px;
+    }
+
+    header .login, header .live-chat {
+        font-size: 12px;
+    }
+
+    header .login::after {
+        width: 32px;
+        height: 18px;
+        margin-left: 4px;
+    }
+
+    header .live-chat::after {
+        width: 32px;
+        height: 18px;
+        margin-left: 4px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 44px;
+    }
+
+    header span, header a {
+        font-size: 14px;
+    }
+
+    header .login, header .live-chat {
+        font-size: 12px;
+    }
+
+    .acc__btns {
+        display: none;
+    }
+
+    .tele__tab {
+        margin: 0 auto;
+    }
+
+    .nav__tab {
+        display: none;
+    }
+
+    .burger__menu {
+        position: absolute;
+    }
+
+    
+}
+

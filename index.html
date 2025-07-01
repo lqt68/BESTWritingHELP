@@ -16,7 +16,7 @@
         <header class="container-fluid d-flex align-items-center">
             <div class="container">
                 <div class="row">
-                    <div class="col-8 d-flex justify-content-evenly">
+                    <div class="col-12 d-none d-sm-flex justify-content-evenly col-md-8 tele__tab">
                         <span class="d-flex align-items-center"
                             >Sales toll free:
                             <a href="#">1 (044) 121-0506</a></span
@@ -26,7 +26,17 @@
                             <a href="#">1 (044) 121-0507</a></span
                         >
                     </div>
-                    <div class="col-4 d-flex justify-content-evenly">
+
+                    <div class="d-flex align-items-center justify-content-between d-sm-none ">
+                        <img class="d-block mobile__logo" src="./assets/img/Logo_mobile_2.svg" alt="Logo_mobile_2.svg">
+                        <div class="burger__menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="col-4 acc__btns">
                         <a class="login d-flex align-items-center" href="#"
                             >Login</a
                         >
@@ -41,7 +51,12 @@
         <nav class="container-fluid d-flex align-items-center">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="burger__menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="col-12 nav__tab">
                         <ul class="d-flex justify-content-around">
                             <li class="border-li"><a href="#">home</a></li>
                             <li class="border-li"><a href="#">about us</a></li>
@@ -700,10 +715,6 @@
                         <a href="#">Buy Research Paper</a>
                     </div>
                 </div>
-
-                <!-- <div class="plus">
-                    <h6>+</h6>
-                </div> -->
 
                 <div class="line__plus">
                     <div class="line__footer"></div>

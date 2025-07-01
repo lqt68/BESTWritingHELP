@@ -2,9 +2,12 @@
 @import url(./components/header.css);
 @import url(./components/nav.css);
 @import url(./components/footer.css);
+@import url(./media.css);
 
 .intro {
     background-image: url(../assets/img/main_bg_img_heder.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .intro__desc {
